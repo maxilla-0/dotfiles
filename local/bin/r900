@@ -1,0 +1,5 @@
+#!/bin/bash
+
+xinput --set-prop 10 'libinput Accel Speed' .35
+xinput --set-prop 11 'libinput Accel Speed' .35
+xrandr -s 1600x900

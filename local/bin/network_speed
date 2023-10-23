@@ -1,0 +1,4 @@
+#!/bin/bash
+
+speedtest-cli --simple | awk '/^Download:/ { download="⇩ " $2 " Mbps" } /^Upload:/ { upload="⇧ " $2 " Mbps" } END { printf "%s, %s\n", download, upload }'
+

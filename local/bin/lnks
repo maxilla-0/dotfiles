@@ -1,0 +1,4 @@
+#!/bin/bash
+
+qrencode -s 16 -o ~/.cache/thumbnails/qr.png "$(xsel)"
+display-im6.q16 ~/.cache/thumbnails/qr.png
